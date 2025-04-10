@@ -208,7 +208,7 @@ text-align: justify;
 
   .box-M{
     gap: 20px;
-    border-radius: 5px;
+    border-radius: 6px;
     flex-wrap: wrap;    
     height: auto;
     min-width: 20px;
