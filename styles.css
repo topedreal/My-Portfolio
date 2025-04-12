@@ -89,9 +89,10 @@ body{
 
 .image-block {
   display: flex;
+  justify-content: ;
   flex-direction: column;
   align-items: center;
-  width: 77px;
+  width: auto;
   padding: 10px;
   text-align: center;
 }
@@ -152,6 +153,22 @@ text-align: justify;
     display: none;
    
   }
+
+  .Programming-icon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 10px;
+    }
+  
+
+  .Programming-Flex{
+  
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
  
   /* Style for the CV button */
   .button {
@@ -181,14 +198,7 @@ text-align: justify;
   }
 
   .image-block2 {
-    justify-content: center;  
-    align-items: center;
-    align-items: center;
-    width: 77px;
-    padding: 10px;
-    text-align: center;
-    flex-grow: 1;
-    flex-shrink: 1;
+text-align: center;
   }
 
   figure{
@@ -200,7 +210,7 @@ text-align: justify;
     font-size: 14px;
     color: #333;
     background-color: #f0f0f0;
-    width: 90%;
+    width: 100%;
     text-align: center;
     padding: 2px;
     border-radius: 5px;
@@ -246,21 +256,15 @@ text-align: justify;
     overflow: auto;
   }
   
-  .Programming-icon{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    
-  }
-
+ 
   .box3{
-    height: auto;
+    height: auto ;
   }
 
 .box4{
   height: auto;
   flex: 0;
-  order: 2;
+  order: 2!important;
 }
 .box4 img {
   border-radius: 10px;
@@ -328,9 +332,9 @@ text-align: justify;
   }
   
   .box3{
-    text-align: left;
+    text-align: left; 
     order: 1;
-    flex: none
+    flex: none;
     height: auto;
   }
   .box4{
@@ -364,14 +368,8 @@ text-align: justify;
   }
 
   .image-block2 {
-    justify-content: center;  
-    align-items: center;
-    align-items: center;
-    width: 70px;
-    padding: 10px;
     text-align: center;
-    
-  }
+      }
 
   figure{
     align-items: center;
@@ -479,12 +477,12 @@ text-align: justify;
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 1px 1px 5px black;
 }
 
 .Certificate-flex{
   display: flex;
-  gap: 6px;
+  gap: 7px;
 }
 
 .Experience{
