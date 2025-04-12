@@ -464,9 +464,11 @@ text-align: center;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   border-radius: 10px;
-  width: 100px;
-  height: 859px;
-  overflow-y: scroll; 
+  height: 1000px;
+  margin-left: 5px;
+  margin-right: 5px;
+  overflow-y: auto; 
+  overflow-x: hidden; 
 }
 
 .About-Div{
@@ -477,12 +479,15 @@ text-align: center;
   text-align: center;
   padding: 20px;
   border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   box-shadow: 1px 1px 5px black;
 }
 
 .Certificate-flex{
+  
   display: flex;
-  gap: 7px;
+  gap: 5px;
 }
 
 .Experience{
@@ -619,6 +624,11 @@ text-align: center;
       overflow: auto;
     
   }
+  .flex{
+    max-width: 1000px;
+    margin-right: 0;
+  margin-left: 0;
+  }
 
 }
 
@@ -752,8 +762,9 @@ button:hover {
       position: absolute;
       top: 55px;
       right: -8px;
-      background:  rgb(74, 78, 79); 
+      background:  rgb(0, 0, 0); 
       padding: 10px;
+      margin-right: 15px;
       border-radius: 5px;
       z-index: 100; /* Ensure the menu is on top */
   }
@@ -780,7 +791,7 @@ button:hover {
       position: absolute;
       top: 12px;
       right: 20px;
-      color: rgb(74, 78, 79); 
+      color: rgb(0, 0, 0); 
   }
   .menu-checkbox:checked ~ .menu {
       display: block;
