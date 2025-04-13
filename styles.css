@@ -103,7 +103,7 @@ body{
 figcaption {
   margin-top: 10px;
   font-size: 14px;
-  color: #333;
+  color: #000000;
   background-color: #f0f0f0;
   width: 90%;
   text-align: center;
@@ -194,16 +194,7 @@ text-align: center;
     align-items: center;
   }
 
-  figcaption {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #333;
-    background-color: #f0f0f0;
-    width: 100%;
-    text-align: center;
-    padding: 2px;
-    border-radius: 5px;
-  }
+
   
   .align {
    text-align: center;
@@ -375,17 +366,6 @@ text-align: center;
 
   figure{
     align-items: center;
-  }
-
-  figcaption {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #333;
-    background-color: #f0f0f0;
-    width: 90%;
-    text-align: center;
-    padding: 2px;
-    border-radius: 5px;
   }
   
   .align {
