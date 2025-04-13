@@ -161,6 +161,7 @@ text-align: justify;
     gap: 20px;
     justify-items: center;
     margin-top: 10px;
+    min-height: 200px;
     }
   
 
@@ -170,6 +171,8 @@ text-align: justify;
     flex-direction: column;
     gap: 30px;
   }
+
+  
  
 @media screen and (max-width: 386px) {
 
@@ -258,6 +261,15 @@ text-align: center;
 .align-body {
   text-align: justify; 
 }
+
+.Programming-icon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-top: 10px;
+  }
+
 }
 
 @media screen and (min-width: 387px) and (max-width: 500px){
@@ -269,6 +281,9 @@ text-align: center;
     display: none;
 
   }
+  .image-block2 {
+    text-align: center;
+      }
   
   .align {
    text-align: center;
@@ -308,12 +323,13 @@ text-align: center;
     justify-content: center;
   }
   
-  .Programming-icon{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    
-  }
+  .Programming-icon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 10px;
+    }
   
   .box3{
     text-align: left; 
@@ -408,13 +424,13 @@ text-align: center;
     text-align: center;
   }
   
-  .Programming-icon{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    
-    
-  }
+  .Programming-icon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 10px;
+    }
 
   .box3{
     height: auto;
@@ -595,15 +611,6 @@ text-align: center;
   }
 
   .white-button{
-    width: 100%;
-    padding: 12px;
-    background-color: #ffffff;
-    text-decoration: none;
-    box-sizing: border-box;
-    border-radius: 8px;
-    color: #000000;
-    border: 1px solid black;
-    font-size: 16px;
     cursor: pointer;
     text-align: center;
     align-items: center;
@@ -612,8 +619,7 @@ text-align: center;
   }
 
   .white-button:hover{
-    background-color: #000000;
-    color: white;
+    background-color: #0056b3;
   }
 
 
