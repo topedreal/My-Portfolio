@@ -256,6 +256,7 @@ text-align: center;
   .box2{
     
     gap: 20px;
+    position: relative;
     border-radius: 5px;
     flex-wrap: wrap;    
     height: auto;
@@ -264,11 +265,17 @@ text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 10px;
     align-items: center;
-    display: flex;
-    flex-direction: row;
+    display: block;
     justify-content: center;
+    text-align: center;
     
   
+  }
+  .button{
+    position: relative;
+    
+    bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .box-M{
@@ -295,6 +302,7 @@ text-align: center;
   }
 
 .box4{
+ 
   height: auto;
   flex: 0;
   order: 2!important;
