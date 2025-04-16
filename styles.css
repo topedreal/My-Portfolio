@@ -365,7 +365,7 @@ text-align: justify;
   border-radius: 10px;
 
   overflow-y: auto;
-  overflow-x: hidden;
+ 
 
   transform: translateX(-200px);
   opacity: 0;
