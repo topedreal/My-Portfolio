@@ -3,16 +3,11 @@ header {
   background-color: rgb(108, 104, 104);
   color: #ffffff;
   border-top:10px solidrgb(108, 104, 104);
-  margin-top: 0;
   box-sizing: border-box;
-  padding: 5px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  gap: 20px;  
-  margin-bottom: 30px;
-  
 }
 
 .fade {
@@ -29,7 +24,7 @@ header {
 }
 
 header nav {
-  display: inline-block;
+  font-size: larger;
   transform: translateX(200px);
   opacity: 0;
   animation: fade 1s ease-out forwards;
@@ -44,16 +39,16 @@ header nav {
 
 header nav a{
   display: inline-block;
+  align-items: center;
   color: rgb(255, 255, 255);
-  margin: 10px;
+  margin-right: 10px;
   text-decoration: none;
-  gap: 100px;
   transition: transform 0.2s ease;
 }
 
 header nav a:hover{
   text-decoration: overline ;
-  color: #007bff;
+  color: #000000;
   transform: scale(1.2);
 }
 
@@ -79,19 +74,17 @@ header nav a:hover{
   header nav a:hover{
     text-decoration: none;
     color: #007bff;
-  }
-  
+  }  
 }
 
-
-
+/* BODY*/
 body{
-    background-image: url('images/background-image.jpg'); /* replace with your actual path */
+    background-image: url('images/background-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed; /* stays fixed while scrolling */
-    color: white; /* adjust text color for visibility */
+    background-attachment: fixed; 
+    color: white;
   
   background-color: white;
   margin: 0;
@@ -100,30 +93,19 @@ body{
 }
 
 /*INDEX PAGE CSS*/
-.box {
-  display: flex;
-  gap: 20px;
-  width: 100%;
-  flex-wrap: wrap;
-}
 
-.Skill-web {
+.Skill-container-Web {
     float: left; 
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     min-width: 20px;
-    padding: 20px;
-    height: 420px;
+    height: 470px;
     width: 22%;
-    max-width: 600px;
-  
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 3px rgb(181, 177, 177);
     border-radius: 10px;
-  
     overflow-y: auto;
     overflow-x: hidden;
-  
     transform: translateX(-200px);
     opacity: 0;
     animation: fade 1s ease-out forwards;
@@ -136,7 +118,7 @@ body{
     }
   }
 
-.image-block {
+.Skill-Logo-web {
   display: flex;
   justify-content: ;
   flex-direction: column;
@@ -157,68 +139,28 @@ figcaption {
   border-radius: 5px;
 }
 
-.align {
- text-align: center;
- margin: 0;
- padding: 0;
- display: block;
-}
-
-.TOPE-box{
- 
+.Hero-box{
   display: flex;
-  gap: 20px;
   border-radius: 5px;
-  flex-wrap: wrap;    
-  flex: 4;
-  height: 430px;
-  min-width: 20px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: 470px;
+  box-shadow: 1px 1px 3px rgb(181, 177, 177);
   border-radius: 10px;
   align-items: center;
-  overflow-y: auto;
-  color: rgb(0, 0, 0);
-
   transform: translateX(200px);
   opacity: 0;
   animation: fade 1s ease-out forwards;
 }
-
 @keyframes fade {
   to {
     transform: translateX(0);
     opacity: 1;
   }
 }
-
-.box3{
-  color: white;
-  flex: 4;
-  height: auto;
-}
-.box4{
-align-items: center;
- order: 2;
-flex: 1;
-height: auto;
-
-}
-.box4 img {
-border-radius: 50%;
-object-fit: cover;
-width: 200px;
-}
-
-
-
-.align-body {
-text-align: justify; 
-}
   .For-mobile{
-    margin-top: 20px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 3px rgb(181, 177, 177);
+    width: 100%;
+    border-radius: 10px;
     display: none;
     transform: translateX(-200px);
     opacity: 0;
@@ -233,156 +175,89 @@ text-align: justify;
   }
 
  
-
-  
- 
 @media screen and (max-width: 386px) {
-
-  .Skill-web {
+  .Skill-container-Web {
     display: none;
   }
-  .image-block {
+  .Skill-Logo-web {
     display: none;
 
   }
-  .TOPE-box{
+  .Hero-box{
     display: block;
     text-align: center;
     height: auto;
-  }
-  
-  .box3{
-    text-align: left; 
   }
   .For-mobile{
     display: grid;
   }
 
 }
-
 @media screen and (min-width: 387px) and (max-width: 500px){
   
-  .Skill-web {
+  .Skill-container-Web  {
     display: none;
   }
-  .image-block {
+  .Skill-Logo-web {
     display: none;
 
   }
-
-  .TOPE-box{
+  .Hero-box{
     text-align: center;
     display: block;
     height: auto;
   }
-
   .For-mobile{
     display: grid;
   }
-  
-  .box3{
-    text-align: left; 
-  }
 }
-
 @media screen and (min-width: 501px) and (max-width: 768px){
 
-  .Skill-web {
+  .Skill-container-Web {
     display: none;
   }
-  .image-block {
+  .Skill-Logo-web {
     display: none;
-
   }
-  .TOPE-box{
-    display: flex;
-    flex-direction: row;
-    height: auto;
-  }
-
   .For-mobile{
     display: grid;
   }
-
-  .box3{
-    height: auto;
-  }
-
-  .box4{
-    margin-top: 120px ;
-    height: auto;
-    flex: 0;
-    order: 2;
 }
-
-}
-
 
 /*About Page*/
-
-
 .About-box{
- 
-  display: flex;
-  gap: 20px;
-  border-radius: 5px;
-  flex-wrap: wrap;    
-  flex: 4;
+  border-radius: 5px;   
   height: auto;
-  min-width: 20px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 1px 1px 3px rgb(181, 177, 177);
   border-radius: 10px;
   align-items: center;
   overflow-y: auto;
   color: rgb(255, 255, 255);
-
   transform: translateX(200px);
   opacity: 0;
   animation: fade 1s ease-out forwards;
 }
-
 @keyframes fade {
   to {
     transform: translateX(0);
     opacity: 1;
   }
 }
-
-
 .Certificate-box {
-  float: left; 
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  min-width: 20px;
-  padding: 20px;
-  height: 1030px;
+  height: 1070px;
   width: 22%;
-  max-width: 600px;
-
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 3px rgb(181, 177, 177);
   border-radius: 10px;
-
   overflow-y: auto;
- 
-
   transform: translateX(-200px);
   opacity: 0;
   animation: fade 1s ease-out forwards;
 }
-
 @keyframes fade {
   to {
     transform: translateX(0);
     opacity: 1;
   }
-}
-
-
-.About-Div{
-  text-align: justify;
-  
 }
 .Certificate{
   text-align: center;
@@ -391,31 +266,17 @@ text-align: justify;
   margin-left: 5px;
   margin-right: 5x;
   margin-bottom: 10px;
-  color: #000000;
-  background-color: rgb(255, 255, 255);
+  color: #ffffff;
   box-shadow: 1px 1px 3px rgb(181, 177, 177);
 }
-
-.Certificate-flex{
-  
-  display: flex;
-  gap: 5px;
-}
-
 .Experience{
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  gap: 20px;
-  border-radius: 5px;
-  flex-wrap: wrap;    
-  flex: 4;
+  border-radius: 5px;   
   height: auto;
-  min-width: 20px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 1px 1px 3px rgb(181, 177, 177);
   border-radius: 10px;
   align-items: center;
+  overflow-y: auto;
+  color: rgb(255, 255, 255);
   overflow-y: auto;
   color: rgb(255, 255, 255);
 
@@ -432,36 +293,16 @@ text-align: justify;
 }
 
   .E-Headings{
-    display: flex;
     justify-content: space-between;
-    padding: 10px 15px;
-    margin-top: 40px;
-    margin-bottom: 30px;
     box-sizing: border-box;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 3px rgb(181, 177, 177);
   }
 
-    .cert-button {
-      background-color: #007bff;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 10px;
-      transition: background-color 0.3s ease;
-    }
-    
-    .button:hover {
-      background-color: #0f70d1;
-    }
-
     .For-mobile-A{
+      display: none;
       padding: 20px;
       margin-top: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      display: none;
+      box-shadow: 1px 1px 3px rgb(181, 177, 177);
       transform: translateX(200px);
       opacity: 0;
       animation: fade 1s ease-out forwards;
@@ -474,22 +315,20 @@ text-align: justify;
       } 
     }
 
+    .height{
+      box-shadow: 1px 1px 3px rgb(181, 177, 177);
+      width: 160px;
+      height: 250px;
+    }
+
 
   @media screen  and (max-width: 768px){
   .Certificate-box{
     display: none;
   }
   .E-Headings{
-    display: flex;
-    flex-wrap: wrap;
     text-align: justify;
     justify-content: center;
-    align-content: center;
-  }
-  .E-Headings-text{
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 5px;
   }
   .For-mobile-A{
     display: grid;
@@ -500,140 +339,58 @@ text-align: justify;
   opacity: 0;
   animation: fade 1s ease-out forwards;
 }
-
 @keyframes fade {
   to {
     transform: translateX(0);
     opacity: 1;
   }
 }
-  
   }
-
-
-/*Potfolio*/
-.flex {
-  gap: 10px;
-  display: flex; 
-  max-width: 1000px;
-  margin: 5px;
+/*Projects*/
+.projects {
+  border-radius: 10px;
   box-sizing: border-box;
-  overflow-x: auto;
-  margin-right: 80px;
-  margin-left: 80px;
+  box-shadow: 1px 1px 3px rgb(181, 177, 177);
 }
-.flex-i{
-  border-radius: 20px !important;
+.Project-image{
+  border-radius: 20px
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
 }
-.flex-i:hover{
+.Project-image:hover{
   transform: scale(1.1);
 }
-
-
-.center {
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  width: 85%;
-  margin: 50px auto;
-  padding: 10px;
-  border: 10px;
-  border-radius: 10px;
-  box-sizing: border-box;
-  box-shadow: 2px 2px 10px black;
-  justify-content: center;
-  flex-shrink: 0;
-
-
-}
-.middle{
- text-align: justify;
- justify-content: center;
- justify-items: center;
- margin: 20px;
-}
-
-.tech-s{
+.tech-stack{
   color: white;
-  background-color: #000000;
+  background-color: rgb(108, 104, 104);
   padding: 5px;
   border-radius: 5px;
  min-width: none;
  
 }
-
-  .tech {
-  gap: 15px;
-  display: flex;
-  width: 100%;
-  margin: 5px;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  justify-content: center;
-  overflow: auto;
-  }
-
-  .white-button{
-    cursor: pointer;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-  }
-
-  .white-button:hover{
-    background-color: #0056b3;
-  }
-
-
   
-  
-  @media screen  and (max-width: 768px){
-    .tech {
-      gap: 15px;
-      display: flex; 
-      width: 100%;
-      margin: 5px;
-      box-sizing: border-box;
-      overflow: auto;
-    
-  }
-  .flex{
-    max-width: 1000px;
-    margin-right: 0;
-  margin-left: 0;
-  }
-
-  .white-button{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-
-}
-
 /*Contact page */
+
+.Form-container{
+  box-shadow: 1px 1px 3px rgb(181, 177, 177);
+}
 form {
   max-width: 400px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #f8f9fa;
+  background-color: rgb(108, 104, 104);
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 label {
   display: block;
   margin-bottom: 6px;
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
 }
-
 input, textarea {
   width: 100%;
   padding: 10px;
@@ -646,52 +403,29 @@ input, textarea {
   transition: border-color 0.3s ease;
   box-sizing: border-box;
   overflow: auto;
+  color: white;
+  background-color: inherit;
 }
-
 input:focus, textarea:focus {
-  border-color: #007bff;
+  border-color: #000000;
   outline: none;
 }
-
 button {
   width: 100%;
-  padding: 12px;
-  background-color: #007bff;
   border: none;
-  border-radius: 8px;
-  color: #fff;
-  font-size: 16px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
-
-button:hover {
-  background-color: #0056b3;
-}
-
 .contact{
   text-align: center;
   flex-wrap: wrap;
   justify-content: center;
 }
-
-
-@media screen and (max-width: 768px){
-  form {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
-  }
-}
-
  /*FOOTER CSS*/ 
  footer {
   background-color: rgb(108, 104, 104);
   border-bottom: 7px solid rgb(108, 104, 104);
-  padding: 2px 20px 10px 20px;
+  padding: 2px 20px 2px 20px;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -699,23 +433,18 @@ button:hover {
   gap: 20px;
   border-top:6px solid rgb(108, 104, 104);
   box-sizing: border-box;
-  margin-top: 0px;
+  margin: 0;
   color: white;
-  
-  
 }
 
 .socials a {
   display: inline-block;
   padding: 0px 25px 0px 25px;
   transition: transform 0.1s ease;
-
 }
-
 .socials a:hover {
   transform: scale(1.1);
 }
-
 .social-icon {
   width: 25px;
   height: 30px;
@@ -730,7 +459,6 @@ button:hover {
     justify-content: center;
   }
 }
-
 @media (min-width: 768px) {
   .menu-label, .menu-checkbox, .menu {
       display: none;
@@ -749,14 +477,11 @@ button:hover {
       position: absolute;
       top: 55px;
       right: -8px;
-      background:  rgb(0, 0, 0); 
+      background:  rgb(108, 104, 104); 
       padding: 10px;
       margin-right: 15px;
       border-radius: 5px;
       z-index: 100; /* Ensure the menu is on top */
-
-
-      
   }
   .menu ul {
       list-style: none;
@@ -787,7 +512,6 @@ button:hover {
       opacity: 0;
       animation: fade 1s ease-out forwards;
     }
-    
     @keyframes fade {
       to {
         transform: translateX(0);
