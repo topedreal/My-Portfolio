@@ -81,15 +81,16 @@ header nav a:hover{
 body{
     background-image: url('images/background-image.jpg');
     background-size: cover;
+    width: auto;
+    overflow-x: hidden;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed; 
     color: white;
-  
-  background-color: white;
-  margin: 0;
-  padding: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /*INDEX PAGE CSS*/
@@ -135,13 +136,14 @@ figcaption {
   background-color: #f0f0f0;
   width: auto;
   text-align: center;
-  padding: 3px;
+  padding: 1px;
   border-radius: 5px;
 }
 
 .Hero-box{
   display: flex;
   border-radius: 5px;
+  width: auto;
   height: 470px;
   box-shadow: 1px 1px 3px rgb(181, 177, 177);
   border-radius: 10px;
@@ -157,13 +159,12 @@ figcaption {
   }
 }
   .For-mobile{
-    padding: 20px;
     box-shadow: 1px 1px 3px rgb(181, 177, 177);
-    width: 100%;
     border-radius: 10px;
     display: none;
     transform: translateX(-200px);
     opacity: 0;
+    width: auto;
     animation: fade 1s ease-out forwards;
     }
    
@@ -300,13 +301,20 @@ figcaption {
 
     .For-mobile-A{
       display: none;
-      padding: 20px;
-      margin-top: 20px;
+      border-radius: 5px;   
+      height: auto;
+      width: auto;
       box-shadow: 1px 1px 3px rgb(181, 177, 177);
+      border-radius: 10px;
+      overflow-y: auto;
+      color: rgb(255, 255, 255);
+      overflow-y: auto;
+      color: rgb(255, 255, 255);
+    
       transform: translateX(200px);
       opacity: 0;
       animation: fade 1s ease-out forwards;
-      }
+    }
      
     @keyframes fade {
       to {
@@ -348,6 +356,8 @@ figcaption {
   }
 /*Projects*/
 .projects {
+  height: auto;
+  width: auto;
   border-radius: 10px;
   box-sizing: border-box;
   box-shadow: 1px 1px 3px rgb(181, 177, 177);
@@ -468,7 +478,7 @@ button {
   }
 }
 /* Mobile Navigation Styles */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 769px) {
   .desktop-nav {
       display: none; /* Hide desktop nav on mobile */
   }
