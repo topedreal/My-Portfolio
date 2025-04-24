@@ -484,50 +484,58 @@ button {
   }
 }
 /* Mobile Navigation Styles */
+/* Mobile Navigation Styles */
 @media screen and (max-width: 769px) {
   .desktop-nav {
-      display: none; /* Hide desktop nav on mobile */
+    display: none; /* Hide desktop nav on mobile */
   }
+
   .menu {
-      display: none;
-      position: absolute;
-      top: 55px;
-      right: -8px;
-      background:  rgb(108, 104, 104); 
-      padding: 10px;
-      margin-right: 15px;
-      border-radius: 5px;
-      z-index: 100; /* Ensure the menu is on top */
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 0;                     /* Flush with the viewport edge */
+    background: rgb(108, 104, 104);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 100;                 /* Ensure the menu is on top */
+    transform: translateX(100%);  /* Start hidden off to the right */
+    transition: transform 0.3s ease-in-out;
   }
+
   .menu ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
+
   .menu ul li {
-      margin: 10px 0;
+    margin: 10px 0;
   }
+
   .menu ul li a {
-      color: rgb(255, 255, 255) !important;
-      text-decoration: none;
-      display: block;
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none;
+    display: block;
   }
+
   .menu-checkbox {
-      display: none;
+    display: none;
   }
+
   .menu-label {
-      font-size: 35px;
-      cursor: pointer;
-      display: block;
-      position: absolute;
-      top: 12px;
-      right: 20px;
-      color: rgb(0, 0, 0); 
-
-
+    font-size: 35px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    color: rgb(0, 0, 0);
   }
+
   .menu-checkbox:checked ~ .menu {
-      display: block;
-      
-  }  
+    display: block;
+    transform: translateX(0);    /* Slide into view */
+  }
 }
+
