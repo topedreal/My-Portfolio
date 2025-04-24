@@ -100,6 +100,7 @@ background-color: grey;
 
 .custom-btn-project:hover{
   background-color: rgb(97, 95, 95);
+    color:#f0f0f0;
     border-color:rgb(97, 95, 95);
 }
 
@@ -211,11 +212,7 @@ figcaption {
     display: none;
 
   }
-  .Hero-box{
-    display: block;
-    text-align: center;
-    height: auto;
-  }
+
   .For-mobile{
     display: block;
   }
@@ -234,11 +231,7 @@ figcaption {
   .Skill-Logo-web {
     display: none;
   }
-  .Hero-box{
-    text-align: center;
-    display: block;
-    height: auto;
-  }
+
   .For-mobile{
     display: block;
   }
