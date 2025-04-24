@@ -78,7 +78,7 @@ header nav a:hover{
 }
 
 /* BODY*/
-html, body{
+body{
     overflow-x: hidden; 
     margin: 0;
     padding: 0;
@@ -186,7 +186,7 @@ figcaption {
     height: auto;
   }
   .For-mobile{
-    display: grid;
+    display: block;
   }
 
 }
@@ -210,7 +210,7 @@ figcaption {
     height: auto;
   }
   .For-mobile{
-    display: grid;
+    display: block;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 768px){
@@ -227,7 +227,7 @@ figcaption {
     display: none;
   }
   .For-mobile{
-    display: grid;
+    display: block;
   }
 }
 
