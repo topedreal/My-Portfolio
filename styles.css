@@ -351,6 +351,10 @@ figcaption {
 }
   }
 /*Projects*/
+.main-project{
+  display: flex;
+}
+
 .projects {
   border-radius: 10px;
   box-shadow: 1px 1px 3px rgb(181, 177, 177);
@@ -369,6 +373,12 @@ figcaption {
   border-radius: 5px;
  min-width: none;
  
+}
+
+@media screen and (max-width: 768px) {
+  .main-project{
+    display: block;
+  }
 }
   
 /*Contact page */
