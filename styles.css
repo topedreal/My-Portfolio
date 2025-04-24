@@ -82,6 +82,7 @@ body{
     overflow-x: hidden; 
     margin: 0;
     padding: 0;
+    background-attachment: scroll;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -523,15 +524,6 @@ button {
       right: 20px;
       color: rgb(0, 0, 0); 
 
-      transform: translateX(200px);
-      opacity: 0;
-      animation: fade 1s ease-out forwards;
-    }
-    @keyframes fade {
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
 
   }
   .menu-checkbox:checked ~ .menu {
