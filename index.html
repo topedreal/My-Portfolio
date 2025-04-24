@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <link rel="icon" href="Temitope's Photo.jpg" type="image/jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css"> 
 </head>
-  <header class=" p-2 mb-2">
+  <header class=" p-4">
     <input type="checkbox" id="menu-toggle" class="menu-checkbox"  >
             <label for="menu-toggle" class="menu-label">☰</label>
             <nav class="menu">
@@ -16,25 +17,46 @@
                   <!--<li><a href="services.html">Services</a></li>-->
                   <li><a href="projects.html">Projects</a></li>
                   <li><a href="Certifications.html">Certifications</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="contact.html">Lets Talk 💬</a></li>
                 </ul>
             </nav>
-    <div style="font-size: xx-large;" > TEMITOPE . R </div>
+    <div style="font-size: xx-large; font-weight: bold;" > TEMITOPE . R </div>
     <nav > 
-      <ul>
-        <a href="index.html">Home</a>
-        <a href="Certifications.html">Certifications</a>
-       <!-- <a href="services.html">Services</a>-->
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+      <ul class="gap-5">
+        <a href="index.html" style="margin-right: 50px; font-weight: bold;">Home</a>
+        <a href="Certifications.html" style="margin-right: 50px; font-weight: bold;">Certifications</a>
+       <!-- <a href="services.html" style="margin-right: 50px; font-weight: bold;">Services</a>-->
+        <a href="projects.html" style="margin-right: 50px; font-weight: bold;">Projects</a>
+        <a href="contact.html" class="p-2 border" style="background-color: black; color: white; border-radius: 10px;">Lets Talk 💬</a>
       </ul>
     </nav>
   </header>
 
   <body>
     <main>
-      <div class="container web">
-        <div class=" p-3 justify-content-center Skill-container-Web" >
+      <div class="container text-center my-5  py-5 Hero-box">
+        <p>Hello i'm </p>
+        <p><strong><h2>Rotimi Temitope</h2></strong></p>
+        <p>A passionate Front-End Developer crafting clean, responsive websites.</p>
+          <div class="d-flex flex-row justify-content-center">
+            <div>
+              <a class="btn m-3 custom-btn" href="https://drive.google.com/file/d/1eu8igCn9QF3qHBZEq6cGfiVObUcnKpYv/view?usp=drive_link" target="_blank">
+                <i class="fas fa-eye" style="color: rgb(155, 154, 154); font-size: 15px; margin-right: 10px;"></i>
+              Resume
+              </a>
+            </div>
+            <div>
+              <a class="btn m-3 custom-btn-project" href="projects.html" target="_self">
+                <i class="fas fa-eye" style="color: rgb(255, 255, 255); font-size: 15px; margin-right: 10px;"></i>
+                Projects
+              </a>
+            </div>
+            
+          </div>
+      </div>
+
+    <div class="container web ">
+        <div class="  justify-content-center Skill-container-Web" >
           <div>
           <h1 class="text-center ">SKILLS</h1>
           </div>
@@ -82,7 +104,7 @@
             </figure>
           </div>
 
-          <h2 class=" text-center web ">Platforms</h2>
+          <h2 class="text-center">Development Platform Suite</h2>
           <div class="Skill-Logo-web">
             <figure>
               <img src="images/github.svg" alt="GitHub" style="width: 85px; height: 100px;">
@@ -98,33 +120,28 @@
           </div>
         </div>
   
-        <div class="p-4  m-4 Hero-box">
+        <div class="p-4  my-4 About-box">
           <div class="d-block">
-          <div class="text-center my-5">
-            <p>Hello i'm </p>
-            <p><strong><h2>Rotimi Temitope</h2></strong></p>
-            <p>A passionate Front-End Developer crafting clean, responsive websites.</p>
-              <div class="d-flex flex-row justify-content-center">
-                <div><a class="btn btn-primary m-3" style="background-color: white; color: black; border-color: black;" href="https://drive.google.com/file/d/1eu8igCn9QF3qHBZEq6cGfiVObUcnKpYv/view?usp=drive_link" target="_blank">Resume</a></div>
-                <div><a class="btn btn-primary m-3 " href="projects.html" target="_self">Projects</a></div>
-              </div>
-          </div>
-  
           <div class=" my-5 text-center">
             <h2> About Me</h2>
             <p >A proactive Frontend Developer skilled in HTML, CSS, and JavaScript, with Linux and Python experience, exploring backend development and web security. I build intuitive, accessible websites and study ethical hacking and cybersecurity to help protect the web. Driven by clean code and continuous learning.</p>
             <div><img src="images/Temitope's Photo.jpg" alt="Temitope's Photo" height="250px"  class="rounded-circle"></div>
           </div>
+        </div>
+        </div>
 
-          <div class="mt-5 text-center">
-            <h2>Certifications</h2>
+        <div class="text-center my-5">
+          <h2>Certifications</h2>
             <p>Certified and equipped with globally recognized credentials, showcasing my expertise in the industry. Continuously advancing my skills to stay ahead and deliver top-tier solutions.</p>
-            <div><a class="btn btn-primary m-3 " href="Certifications.html" target="_self">View Certifications</a></div>
-          </div>
+            <div><a class="btn btn-primary m-3  custom-btn" href="Certifications.html" target="_self"> <i class="fas fa-eye" style="color: rgb(155, 154, 154); font-size: 15px; margin-right: 10px;"></i> View Certifications</a></div>
+        </div>
 
+        <div class="text-center my-5">
+          <h2>Lets Connect</h2>
+          <p>Feel free to reach out for Projects Collaboration, and Enquires.</p>
+          <div><a class="btn btn-primary m-3 custom-btn" href="contact.html" target="_self">Lets Connect</a></div>
         </div>
-        </div>
-      </div>
+    </div>
 
 
 
@@ -136,8 +153,18 @@
           <h2 class="text-center my-2">Rotimi Temitope</h2>
           <p>A passionate Front-End Developer crafting clean, responsive websites.</p>
             <div class="d-flex flex-row justify-content-center">
-              <div><a class="btn btn-primary m-3" style="background-color: white; color: black; border-color: black;" href="https://drive.google.com/file/d/1eu8igCn9QF3qHBZEq6cGfiVObUcnKpYv/view?usp=drive_link" target="_blank">Resume</a></div>
-              <div><a class="btn btn-primary m-3 " href="projects.html" target="_self">Projects</a></div>
+              <div>
+                <a class="btn m-3 custom-btn" href="https://drive.google.com/file/d/1eu8igCn9QF3qHBZEq6cGfiVObUcnKpYv/view?usp=drive_link" target="_blank">
+                  <i class="fas fa-eye" style="color: rgb(155, 154, 154); font-size: 15px; margin-right: 10px;"></i>
+                Resume
+                </a>
+              </div>
+              <div>
+                <a class="btn m-3 custom-btn-project" href="projects.html" target="_self">
+                  <i class="fas fa-eye" style="color: rgb(255, 255, 255); font-size: 15px; margin-right: 10px;"></i>
+                  Projects
+                </a>
+              </div>
             </div>
         </div>
 
@@ -148,11 +175,11 @@
         </div>
       </div>
 
-      <div class="container For-mobile">
-        <div class="row my-5 text-center">
+      <div class="container  For-mobile">
+        <div class="row my-5  text-center p-3">
           <h1 class="text-center">SKILLS</h1>
           <h2  class="text-center mt-3">Programming Languages</h2>
-          <div class="col-6  mt-3" >
+          <div class="col-6  col-md-4 mt-3" >
             <figure class="text-center" >
               <img src="images/python-svgrepo-com.svg" alt="Python-logo" style="width: 100px; height: 100px;" >
               <figcaption class="mt-2">Python</figcaption>
@@ -212,11 +239,18 @@
         </div>
       </div>
 
-        <div class=" container my-5 text-center For-mobile">
+        <div class=" container my-5  text-center For-mobile p-3">
           <h2>Certifications</h2>
           <p>Certified and equipped with globally recognized credentials, showcasing my expertise in the industry. Continuously advancing my skills to stay ahead and deliver top-tier solutions.</p>
-          <div><a class="btn btn-primary m-3 " href="Certifications.html" target="_self">View Certifications</a></div>
+          <div><a class="btn btn-primary m-3  custom-btn" href="Certifications.html" target="_self"> <i class="fas fa-eye" style="color: rgb(155, 154, 154); font-size: 15px; margin-right: 10px;"></i> View Certifications</a></div>
         </div>
+
+        <div class=" container my-5  text-center For-mobile p-3">
+          <h2>Lets Connect</h2>
+          <p>Feel free to reach out for Projects Collaboration, and Enquires.</p>
+          <div><a class="btn btn-primary m-3 custom-btn" href="contact.html" target="_self">Lets Connect</a></div>
+        </div>
+
     </div>
 
 </main>

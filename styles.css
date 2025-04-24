@@ -8,6 +8,10 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+ 
+}
+header:hover {
+  box-shadow: 0px 0px 10px black; /* Add shadow around the element */
 }
 
 .fade {
@@ -29,7 +33,6 @@ header nav {
   opacity: 0;
   animation: fade 1s ease-out forwards;
 }
-
 @keyframes fade {
   to {
     transform: translateX(0);
@@ -42,35 +45,32 @@ header nav a{
   align-items: center;
   color: rgb(0, 0, 0);
   margin-right: 10px;
+  
   text-decoration: none;
   transition: transform 0.2s ease;
 }
 
 header nav a:hover{
-  text-decoration: overline ;
-  color: #007bff;;
   transform: scale(1.2);
 }
 
 @media screen and (max-width: 768px){
-
   header {
     justify-content: center;
     width: 100%;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
   }
- 
-  
   header nav {
     display: none;
   }
-  
   header nav a{
     color: white;
     margin: 10px;
     text-decoration: none;
     gap: 100px;
   }
-  
   header nav a:hover{
     text-decoration: none;
     color: #007bff;
@@ -88,14 +88,30 @@ body{
 
 /*INDEX PAGE CSS*/
 
+.web{
+  margin-top: 200px;
+}
+
+.custom-btn-project{
+background-color: grey;
+ border-color: grey;
+ transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.custom-btn-project:hover{
+  background-color: rgb(97, 95, 95);
+    border-color:rgb(97, 95, 95);
+}
+
 .Skill-container-Web {
     float: left; 
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     min-width: 20px;
-    height: 960px;
+    height: 527px;
     width: 25%;
+    margin-right: 5px;
     box-shadow: 1px 1px 3px rgb(181, 177, 177);
     border-radius: 10px;
     overflow-y: auto;
@@ -104,7 +120,7 @@ body{
     opacity: 0;
     animation: fade 1s ease-out forwards;
   }
-  
+
   @keyframes fade {
     to {
       transform: translateX(0);
@@ -114,7 +130,6 @@ body{
 
 .Skill-Logo-web {
   display: flex;
-  justify-content: ;
   flex-direction: column;
   align-items: center;
   width: auto;
@@ -133,11 +148,11 @@ figcaption {
   border-radius: 5px;
 }
 
-.Hero-box{
+.About-box{
   display: flex;
   border-radius: 5px;
   width: auto;
-  height: 960px;
+  height: auto;
   box-shadow: 1px 1px 3px rgb(181, 177, 177);
   border-radius: 10px;
   align-items: center;
@@ -167,9 +182,24 @@ figcaption {
       opacity: 1;
     } 
   }
+  .custom-btn{
+  background-color: white;
+  color: black;
+  border-color: black;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
 
+  .custom-btn:hover {
+    background-color: #000000;
+    color:#f0f0f0;
+    border-color:#000000 ;
+  }
  
 @media screen and (max-width: 386px) {
+
+  .Hero-box{
+    display: none;
+  }
   .web{
     display: none;
   }
@@ -192,18 +222,17 @@ figcaption {
 
 }
 @media screen and (min-width: 387px) and (max-width: 500px){
-
+  .Hero-box{
+    display: none;
+  }
   .web{
     display: none;
   }
-
-  
   .Skill-container-Web  {
     display: none;
   }
   .Skill-Logo-web {
     display: none;
-
   }
   .Hero-box{
     text-align: center;
@@ -214,13 +243,13 @@ figcaption {
     display: block;
   }
 }
-@media screen and (min-width: 501px) and (max-width: 768px){
-
+@media screen and (min-width: 501px) and (max-width: 1200px){
+  .Hero-box{
+    display: none;
+  }
   .web{
     display: none;
   }
-
-
   .Skill-container-Web {
     display: none;
   }
@@ -231,140 +260,13 @@ figcaption {
     display: block;
   }
 }
-
-/*About Page*/
-.About-box{
-  border-radius: 5px;   
-  height: auto;
-  box-shadow: 1px 1px 3px rgb(181, 177, 177);
-  border-radius: 10px;
-  align-items: center;
-  overflow-y: auto;
-  color: rgb(0, 0, 0);
-  transform: translateX(200px);
-  opacity: 0;
-  animation: fade 1s ease-out forwards;
-}
-@keyframes fade {
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-.Certificate-box {
-  height: 1070px;
-  width: 22%;
-  box-shadow: 1px 1px 3px rgb(181, 177, 177);
-  border-radius: 10px;
-  overflow-y: auto;
-  transform: translateX(-200px);
-  opacity: 0;
-  animation: fade 1s ease-out forwards;
-}
-@keyframes fade {
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-.Certificate{
-  text-align: center;
-
-  border-radius: 10px;
-  margin-left: 5px;
-  margin-right: 5x;
-  margin-bottom: 10px;
-  color: #000000;
-  box-shadow: 1px 1px 3px rgb(181, 177, 177);
-}
-.Experience{
-  border-radius: 5px;   
-  height: auto;
-  box-shadow: 1px 1px 3px rgb(181, 177, 177);
-  border-radius: 10px;
-  align-items: center;
-  overflow-y: auto;
-  color: rgb(255, 255, 255);
-  overflow-y: auto;
-  color: rgb(255, 255, 255);
-
-  transform: translateX(200px);
-  opacity: 0;
-  animation: fade 1s ease-out forwards;
-}
-
-@keyframes fade {
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-  .E-Headings{
-    justify-content: space-between;
-    box-sizing: border-box;
-    box-shadow: 1px 1px 3px rgb(181, 177, 177);
-  }
-
-
-
-    
-      transform: translateX(200px);
-      opacity: 0;
-      animation: fade 1s ease-out forwards;
-    }
-     
-    @keyframes fade {
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      } 
-    }
-
-    .height{
-      box-shadow: 1px 1px 3px rgb(181, 177, 177);
-      width: 160px;
-      height: 250px;
-    }
-
-
-  @media screen  and (max-width: 768px){
-  .Certificate-box{
-    display: none;
-  }
-  .E-Headings{
-    text-align: justify;
-    justify-content: center;
-  }
-
-
-.Experience{
-  transform: translateX(-200px);
-  opacity: 0;
-  animation: fade 1s ease-out forwards;
-}
-@keyframes fade {
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-  }
 /*Projects*/
 .main-project{
   display: flex;
 }
-
 .projects {
   border-radius: 10px;
   box-shadow: 1px 1px 3px rgb(181, 177, 177);
-}
-.Project-image{
-  border-radius: 20px
-  transition: transform 0.3s ease;
-}
-.Project-image:hover{
-  transform: scale(1.1);
 }
 .tech-stack{
   color: white;
@@ -372,17 +274,13 @@ figcaption {
   padding: 5px;
   border-radius: 5px;
  min-width: none;
- 
 }
-
 @media screen and (max-width: 768px) {
   .main-project{
     display: block;
   }
-}
-  
+} 
 /*Contact page */
-
 .Form-container{
   box-shadow: 1px 1px 3px rgb(181, 177, 177);
 }
@@ -446,7 +344,6 @@ button {
   color: white;
   width: auto;
 }
-
 .socials a {
   display: inline-block;
   padding: 0px 25px 0px 25px;
@@ -460,7 +357,6 @@ button {
   height: 30px;
   filter: invert(100%); 
 }
-
 @media screen and (max-width: 768px) {
   footer{
     flex-wrap: wrap;
@@ -469,16 +365,15 @@ button {
     justify-content: center;
   }
 }
-
 @media (min-width: 768px) {
   .menu-label, .menu-checkbox, .menu {
       display: none;
   }
   .desktop-nav {
-      display: block; /* Show desktop navigation */
+      display: block; 
   }
 }
-/* Mobile Navigation Styles */
+
 /* Mobile Navigation Styles */
 @media screen and (max-width: 769px) {
   .desktop-nav {
@@ -497,27 +392,22 @@ button {
     transform: translateX(100%);  /* Start hidden off to the right */
     transition: transform 0.3s ease-in-out;
   }
-
   .menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-
   .menu ul li {
     margin: 10px 0;
   }
-
   .menu ul li a {
     color: rgb(255, 255, 255) !important;
     text-decoration: none;
     display: block;
   }
-
   .menu-checkbox {
     display: none;
   }
-
   .menu-label {
     font-size: 35px;
     cursor: pointer;
@@ -527,10 +417,8 @@ button {
     right: 20px;
     color: rgb(0, 0, 0);
   }
-
   .menu-checkbox:checked ~ .menu {
     display: block;
     transform: translateX(0);    /* Slide into view */
   }
 }
-
