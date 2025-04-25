@@ -168,8 +168,8 @@ figcaption {
   }
 }
   .For-mobile{
-    padding-top: 75px;
-    padding-bottom: 325px;
+    padding-top: 50px;
+    padding-bottom: 350px;
     border-radius: 10px;
     display: none;
     transform: translateX(-200px);
@@ -377,9 +377,9 @@ button {
   .menu {
     display: none;
     position: absolute;
-    top: 55px;
-    right: 0;                     /* Flush with the viewport edge */
-    background: rgb(108, 104, 104);
+    top: 75px;
+    right: 20px;                     /* Flush with the viewport edge */
+    background: rgb(0, 0, 0);
     padding: 10px;
     border-radius: 5px;
     z-index: 100;                 /* Ensure the menu is on top */
@@ -407,8 +407,8 @@ button {
     cursor: pointer;
     display: block;
     position: absolute;
-    top: 12px;
-    right: 20px;
+    top: 25px;
+    right: 15px;
     color: rgb(0, 0, 0);
   }
   .menu-checkbox:checked ~ .menu {
