@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
           entry.target.style.transform = 'translateX(0)'; // Move hero element horizontally into view
         } else {
           entry.target.style.opacity = 0;
-          entry.target.style.transform = 'translateX(50px)'; // Move hero element off to the left when not in view
+          entry.target.style.transform = 'translateX(-50px)'; // Move hero element off to the left when not in view
         }
       });
     }, { threshold: 0.3 });  // Trigger when 30% of the element is visible
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
           entry.target.style.transform = 'translateX(0)'; // Move webcontainer element vertically into view
         } else {
           entry.target.style.opacity = 0;
-          entry.target.style.transform = 'translateX(50px)'; // Move webcontainer element downwards when not in view
+          entry.target.style.transform = 'translateX(-50px)'; // Move webcontainer element downwards when not in view
         }
       });
     }, { threshold: 0.3 });  // Trigger when 30% of the element is visible
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
           // When the element is out of the viewport
           entry.target.style.opacity = 0;
-          entry.target.style.transform = 'translateX(50px)'; // Move webCert element out of view
+          entry.target.style.transform = 'translateX(-50px)'; // Move webCert element out of view
         }
       });
     }, { threshold: 0.3 });  // Trigger when 30% of the element is visible
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
           // When the element is out of the viewport
           entry.target.style.opacity = 0;
-          entry.target.style.transform = 'translateX(50px)'; // Move mobileAbout element off to the left when not in view
+          entry.target.style.transform = 'translateX(-50px)'; // Move mobileAbout element off to the left when not in view
         }
       });
     }, { threshold: 0.3 });  // Trigger when 30% of the element is visible
@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
           // When the element is out of the viewport
           entry.target.style.opacity = 0;
-          entry.target.style.transform = 'translateX(50px)'; // Move mobileCert element downward and make it invisible
+          entry.target.style.transform = 'translateX(-50px)'; // Move mobileCert element downward and make it invisible
         }
       });
     }, { threshold: 0.3 });  // Trigger when 30% of the element is visible
