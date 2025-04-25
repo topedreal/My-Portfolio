@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (entry.isIntersecting) {
           // When the element is in the viewport
           entry.target.style.opacity = 1;
-          entry.target.style.transform = 'translateX(0)'; // Bring project2 into view
+          entry.target.style.transform = 'translateY(0)'; // Bring project2 into view
         } else {
           // When the element is out of the viewport
           entry.target.style.opacity = 0;
