@@ -168,7 +168,8 @@ figcaption {
   }
 }
   .For-mobile{
-    box-shadow: 1px 1px 3px rgb(181, 177, 177);
+    padding-top: 200px;
+    padding-bottom: 200px;
     border-radius: 10px;
     display: none;
     transform: translateX(-200px);
