@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="Images/letter-t-svgrepo-com.svg" type="image/svg+xml" sizes="16x16 32x32">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <title>Contact Me</title>
@@ -42,15 +43,15 @@
           <h2>SEND ME AN EMAIL</h2>
           <p>I'M VERY RESPONSIVE TO MESSAGES</p>
 
-          <form action="https://formspree.io/f/xgvanreo" method="POST" target="_blank">
+          <form action="https://formspree.io/f/xgvanreo" method="POST" target="_blank" autocomplete="on">
             <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+            <input type="text" id="name" name="name" required autocomplete="name"><br><br>
 
             <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+            <input type="email" id="email" name="email" required autocomplete="email"><br><br>
 
             <label for="message">Your Message:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <textarea id="message" name="message" rows="4" required autocomplete="off"></textarea><br><br>
 
             <button class="btn btn-primary w-35 mx-2 p-2" type="submit">Send Message</button>
 
