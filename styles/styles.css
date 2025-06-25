@@ -14,16 +14,9 @@ header {
 }
 header nav {
   font-size: larger;
-  transform: translateX(200px);
-  opacity: 0;
-  animation: fade 1s ease-out forwards;
+ 
 }
-@keyframes fade {
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+
 header nav a{
   display: inline-block;
   align-items: center;
